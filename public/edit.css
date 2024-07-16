@@ -19,9 +19,19 @@ header {
 }
 
 .btn-pink {
-    background-color: #ff69b4; /* Color rosado */
-    color: #fff; /* Texto blanco */
-    border-color: #ff69b4; /* Borde del mismo color que el fondo */
+    background-color: #ff69b4; 
+    color: #fff; 
+    border-color: #ff69b4; 
+}
+
+footer {
+    background-color: #ee52c7; 
+    color: #08010c; 
+    padding: 10px; 
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
 }
 
 

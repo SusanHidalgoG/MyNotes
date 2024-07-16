@@ -7,7 +7,6 @@ const app = express();
 const PORT = 3000;
 const PUBLIC = path.join(__dirname, 'public');
 
-// Middleware para parsear el cuerpo de las solicitudes POST
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(PUBLIC));
 
