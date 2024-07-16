@@ -24,9 +24,9 @@ app.post('/submit_note', (req, res) => {
     const { 'note-title': noteTitle, 'note-text': noteText, 'note-date': noteDate } = req.body;
 
     console.log(`Nota guardada🗒️:
-    Título: ${noteTitle}
-    Texto: ${noteText}
-    Fecha: ${noteDate}`);
+    Note Title 🪩: ${noteTitle}
+    Text 🗒️: ${noteText}
+    Date 📅: ${noteDate}`);
 
     res.sendFile(path.join(PUBLIC, 'note.html'));
 });
