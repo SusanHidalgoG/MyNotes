@@ -12,35 +12,28 @@
         <h1>🤍🪩🫧 New Note 🫧🪩🤍</h1>
     </header>
     <div class="newnote">
-        <form action="submit_note.php" method="POST">
+        <form action="/submit_note" method="POST">
             <div class="form-group">
                 <label for="note-title">Note Title 🪩:</label>
-                <input type="text" class="form-control" id="note-title" name="note-title" placeholder="Ingrese el titulo de esta nueva nota 🤍" required >
+                <input type="text" class="form-control" id="note-title" name="note-title" placeholder="Ingrese el titulo de esta nueva nota 🤍" required>
             </div>
             <div class="form-group">
                 <label for="note-text">Text 🗒️:</label>
-                <textarea class="form-control" id="note-text" name="note-text" rows="4" placeholder="Ponga aqui el contenido de esta maravillosa nota 🫧" required ></textarea>
+                <textarea class="form-control" id="note-text" name="note-text" rows="4" placeholder="Ponga aqui el contenido de esta maravillosa nota 🫧" required></textarea>
             </div>
             <div class="form-group">
-                <label for="note-date">Date:</label>
-                <input type="date" class="form-control" id="note-date" name="note-date" required >
+                <label for="note-date">Date 📅:</label>
+                <input type="date" class="form-control" id="note-date" name="note-date" required>
             </div>
             <button type="button" class="btn btn-pink" id="home-button">Back to Notes</button>
-
             <script>
                 var newButton = document.getElementById('home-button');
                 newButton.addEventListener('click', function() {
                     window.location.href = 'home.html';
                 });
             </script>
-
             <button type="submit" class="btn btn-pink">Save Note</button>
-
         </form>
     </div>
-
-
-
-
 </body>
 </html>

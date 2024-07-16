@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Note Saved</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" href="note.css">
+        </head>
+        <body>
+            <header>
+                <h1>🪩🫧🤍Note Saved 🤍🫧🪩</h1>
+            </header>
+                <div class="data">
+                    <p>Note Title 🪩: ${noteTitle}</p>
+                    <p>Text 🗒️: ${noteText}</p>
+                    <p>Date 📅: ${noteDate}</p>
+
+                    <button type="button" class="btn btn-pink" id="home-button">Back to Notes</button>
+                   <script>
+                        var newButton = document.getElementById('home-button');
+                        newButton.addEventListener('click', function() {
+                         window.location.href = 'home.html';
+                     });
+                    </script>
+
+                    <button type="button" class="btn btn-pink" id="edit-button">Modify Note</button>
+                    <script>
+                    var newButton = document.getElementById('edit-button');
+                    newButton.addEventListener('click', function () {
+                    window.location.href = 'edit.html';
+                    });
+                    </script>
+                </div>
+
+
+            <footer>
+                <p>&copy; 2024 My Notes 🤍By Susan Hidalgo 🤍</p>
+            </footer>
+
+        </body>
+        </html>
